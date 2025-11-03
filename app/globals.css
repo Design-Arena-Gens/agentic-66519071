@@ -1,0 +1,47 @@
+:root {
+  color-scheme: light;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  --carousel-bg: #0f172a;
+  --carousel-arrow-color: #facc15;
+  --carousel-hover-overlay: rgba(250, 204, 21, 0.15);
+  --carousel-arrow-bg: rgba(255, 255, 255, 0.12);
+  --carousel-text-color: #f8fafc;
+  --carousel-description-bg: rgba(15, 23, 42, 0.92);
+  --carousel-description-color: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b1220;
+  color: var(--carousel-text-color);
+  min-height: 100vh;
+}
+
+.page {
+  padding: min(10vw, 6rem) 4vw;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.page__intro {
+  text-align: center;
+  max-width: 640px;
+}
+
+.page__intro h1 {
+  font-size: clamp(2.25rem, 1.5rem + 2.5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.page__intro p {
+  line-height: 1.6;
+  color: rgba(226, 232, 240, 0.75);
+  margin: 0;
+}
